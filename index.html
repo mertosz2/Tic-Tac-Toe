@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-area">
+        <h1 > Tic Tac Toe</h1>
+        <div class="game-options">
+            <label for="board_size">Board Size (3 - 9) : </label>
+            <input type="number" id="tablesize" name="tablesize" min="3" max="9" value="3" onchange="resetAIButton()">
+    
+            <input type="submit" value="Start Game" onclick="generateGame()" class="submit-button"> 
+        </div>
+
+        <div id="game-board" class="game-board">
+            Insert board size and press "Start Game"
+        </div>
+        <div class="score-card">
+            X Winner Score : <span id="score-X">0</span> 
+            <br>
+            O Winner Score : <span id="score-O">0</span>
+        </div>
+
+        <div id="game-result" class="game-result"></div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
